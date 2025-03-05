@@ -1,4 +1,4 @@
 # Parcial1-Front-End
 E-commerce
-Santiago Carbal
+Santiago Carbal,
 Yordi Gonzales
