@@ -1,0 +1,28 @@
+/* 
+ * Footer
+ */
+
+.footer {
+    display: flex;                      
+    flex-wrap: wrap;                     
+    background-color: black;
+    color: white;  
+    padding: 50px;
+    gap: 20px;
+}
+.footer .footCard{
+    display: flex;
+    flex-direction: column;             
+    align-items: flex-start;
+    width: calc(20% - 20px); 
+}
+.footer .footCard .social_media{
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .footCard .download{
+    flex-direction: column;
+}
+ul {
+    list-style-type: none;
+}
