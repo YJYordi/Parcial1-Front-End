@@ -1,118 +1,8 @@
-/*
-main{
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-}
-
-.main-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-auto-flow: column;
-    border: solid 2px #000;
-}
-
-*/
 body{
     margin: 0;
-    font-family: roboto, sans-serif;
+    font-family: 'Poppins', roboto, sans-serif;
 }
-.main-navbar{
-    display: flex;
-    background-color: transparent;
-    min-width: 12rem;
-    border: solid 2px transparent;
-    justify-content: center;
-}
-/*
-.main-navbar ul{
-    display: flex;
-    justify-content: center;
-}
-.main-navbar li{
-    list-style: none;
-    margin: 1em;
-}
-.main-navbar a{
-    text-decoration: none;
-}
-*/
-.main-navbar button{
-    background-color: transparent;
-    border: none;    
-    margin: 1em 2em;
-}
-.main-navbar button:hover{
-    border-bottom: solid 1px #999;    
-}
-SECOND NAVEGATION BAR
-
-.second-navbar{
-    background-color: transparent;
-    min-width: 10rem;
-    border: solid 2px #000;
-}
-.second-navbar ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.second-navbar li{
-    list-style: none;
-    margin: 1em;
-}
-.second-navbar a{
-    text-decoration: none;
-
-}
-.second-navbar details summary{
-    margin: auto;
-}
-/*SECTIONS*
-
-
-.wrapper-items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    border: solid 2px #000;
-    justify-content: space-around;
-}
-.section-mark{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    border: solid 2px #000;
-}
-.banner{
-    width: 100px;
-    height: 100px;
-    border: solid 2px #000;
-}
-
-/*PRODUCT
-.product{
-    background-color: #555;
-    width: 200px;
-    height: 200px;
-    border: solid 2px #000;
-}
-
-.explore{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-*/
-.main .banner{
-    width: 80%;
-    height: auto;
-}
-.main .banner img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/*STRUCTURE*/
 .contenedor {
     display: grid;
     grid-template-areas:
@@ -122,7 +12,7 @@ SECOND NAVEGATION BAR
     grid-template-columns: 200px 1fr 1fr; /* Sidebar fijo, contenido flexible */
     grid-template-rows: 80px auto auto;
   }
-.header { 
+  .header { 
     grid-area: header;
     padding-top: 1em;
 }
@@ -132,6 +22,62 @@ SECOND NAVEGATION BAR
     margin-bottom: 2em;
 }
 .footer { grid-area: footer; }
+
+/*MAIN NAVBAR*/
+.main-navbar{
+    display: flex;
+    background-color: transparent;
+    min-width: 12rem;
+    border: solid 2px transparent;
+    justify-content: center;
+}
+
+.main-navbar button{
+    background-color: transparent;
+    border: solid 1px transparent;    
+    margin: 1em 2em;
+}
+.main-navbar button:hover{
+    border-bottom: solid 1px #999;    
+}
+
+/*SECOND NAVEGATION BAR*/
+.second-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    min-width: 10rem;
+}
+.second-navbar button{
+    background-color: transparent;
+    border-color: transparent;
+    margin: 1em;
+    padding: 0 0.5em;
+    width: fit-content;
+}
+.second-navbar button:hover{
+    border-bottom: solid 1px #999;
+    
+}
+
+/*MAIN BANNER*/
+.main .banner{
+    width: 80%;
+    height: auto;
+}
+.main .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*SECTION*/
+.section-mark{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+/*PRODUCTS*/
 .wrapper-items{
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +103,7 @@ SECOND NAVEGATION BAR
     height: 100%;
     object-fit:  contain;
 }
+/*FOOTER*/
 .footer{
     display: flex;
     flex-direction: column;
