@@ -36,9 +36,6 @@ body{
     text-decoration: none;
 }
 */
-.main-navbar{
-    border-bottom: solid 1px #999;
-}
 .main-navbar button{
     background-color: transparent;
     border: none;    
@@ -66,6 +63,9 @@ SECOND NAVEGATION BAR
 .second-navbar a{
     text-decoration: none;
 
+}
+.second-navbar details summary{
+    margin: auto;
 }
 /*SECTIONS*
 
@@ -120,14 +120,17 @@ SECOND NAVEGATION BAR
       "sidebar main main"
       "footer footer footer";
     grid-template-columns: 200px 1fr 1fr; /* Sidebar fijo, contenido flexible */
-    grid-template-rows: 80px auto 50px;
+    grid-template-rows: 80px auto auto;
   }
 .header { 
     grid-area: header;
     padding-top: 1em;
 }
-.sidebar { grid-area: sidebar; }
-.main { grid-area: main; }
+.sidebar { grid-area: sidebar;}
+.main { 
+    grid-area: main; 
+    margin-bottom: 2em;
+}
 .footer { grid-area: footer; }
 .wrapper-items{
     display: flex;
@@ -140,6 +143,10 @@ SECOND NAVEGATION BAR
     width: 200px;
     height: 200px;
     border: solid 2px transparent;
+    border-radius: 0.5em;
+}
+.product:hover{
+    box-shadow: 0 0 5px 1px #000;
 }
 .product .image-product{
     width: 100%;
@@ -148,18 +155,51 @@ SECOND NAVEGATION BAR
 .product .image-product img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:  contain;
 }
-
-.footer {
+.footer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 2em;
+    align-content: center;
+}
+.wrapper-footer {
     display: flex;                      
     flex-wrap: wrap;                    
-    justify-content: space-around; 
+    justify-content: space-around;
+    height: 100%; 
 }
-.footer .footCard{
+.wrapper-footer .footCard{
     display: flex;
     flex-direction: column;             
     align-items: flex-start;
     width: calc(20% - 20px); 
     height: auto;
+}
+.wrapper-footer .footCard .wrapper-email{
+    display: flex;
+    border: solid 1px #fff;
+    background-color: transparent;
+    border-radius: 0.2em;
+}
+.wrapper-footer .footCard .email{
+    background-color: transparent;
+    padding: 0.5em;
+    width: 60%;
+    color: #fff;
+    border-radius: inherit;
+    border-color: transparent;
+}
+.wrapper-footer .footCard .send{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 40%;
+    cursor: pointer;
 }
