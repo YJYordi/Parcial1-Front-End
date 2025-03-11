@@ -36,11 +36,16 @@ body{
     text-decoration: none;
 }
 */
+.main-navbar{
+    border-bottom: solid 1px #999;
+}
 .main-navbar button{
     background-color: transparent;
     border: none;    
-    margin: 1em;
-    padding: 1em 2em;
+    margin: 1em 2em;
+}
+.main-navbar button:hover{
+    border-bottom: solid 1px #999;    
 }
 SECOND NAVEGATION BAR
 
@@ -99,7 +104,15 @@ SECOND NAVEGATION BAR
     grid-template-rows: 1fr 1fr;
 }
 */
-
+.main .banner{
+    width: 80%;
+    height: auto;
+}
+.main .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .contenedor {
     display: grid;
     grid-template-areas:
@@ -109,7 +122,10 @@ SECOND NAVEGATION BAR
     grid-template-columns: 200px 1fr 1fr; /* Sidebar fijo, contenido flexible */
     grid-template-rows: 80px auto 50px;
   }
-.header { grid-area: header; }
+.header { 
+    grid-area: header;
+    padding-top: 1em;
+}
 .sidebar { grid-area: sidebar; }
 .main { grid-area: main; }
 .footer { grid-area: footer; }
