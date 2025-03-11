@@ -1,3 +1,4 @@
+/*
 main{
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -10,8 +11,7 @@ main{
     border: solid 2px #000;
 }
 
-/*MAIN NAVEGATION BAR*/
-
+*/
 .main-navbar{
     background-color: transparent;
     min-width: 12rem;
@@ -30,7 +30,7 @@ main{
     text-decoration: none;
 }
 
-/*SECOND NAVEGATION BAR*/
+/*SECOND NAVEGATION BAR
 
 .second-navbar{
     background-color: transparent;
@@ -49,9 +49,10 @@ main{
 .second-navbar a{
     text-decoration: none;
 
-/*SECTIONS*/
-
 }
+/*SECTIONS*
+
+
 .wrapper-items{
     display: flex;
     flex-wrap: wrap;
@@ -72,10 +73,55 @@ main{
     border: solid 2px #000;
 }
 
-/*PRODUCT*/
+/*PRODUCT
 .product{
     background-color: #555;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: solid 2px #000;
+}
+
+.explore{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+*/
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "footer footer footer";
+    grid-template-columns: 200px 1fr 1fr; /* Sidebar fijo, contenido flexible */
+    grid-template-rows: 80px auto 50px;
+  }
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+.wrapper-items{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px #000;
+    flex-grow: 1;
+}
+.product{
+    background-color: #888;
+    width: 200px;
+    height: 200px;
+    border: solid 2px #000;
+}
+.footer {
+    display: flex;                      
+    flex-wrap: wrap;                    
+    justify-content: space-around; 
+}
+.footer .footCard{
+    display: flex;
+    flex-direction: column;             
+    align-items: flex-start;
+    width: calc(20% - 20px); 
+    height: auto;
 }
