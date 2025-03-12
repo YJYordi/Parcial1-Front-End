@@ -8,6 +8,14 @@ body{
     margin: 0;
     font-family: 'Roboto', Inter, sans-serif;
 }
+.main{
+    box-sizing: border-box;
+    padding: 0 4em;
+}
+.contenedor header {
+    font-size: 14px;
+    color: #777;
+}
 .header {
     box-sizing: border-box;
     display: flex; 
@@ -17,9 +25,6 @@ body{
     align-items: center;
     padding: 0 4em;
     margin: 2em 0 2em 0;
-}
-.main{
-    padding: 0 4em;
 }
 /*MAIN NAVBAR*/
 .main-navbar{
@@ -38,6 +43,18 @@ body{
 .main-navbar .nav-button:hover{
     border-bottom: solid 1px #999;    
 }
+.main-navbar .user-navbar .icon-nav-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+.main-navbar .user-navbar .icon-nav-button img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
 .nav-banner{
     display: flex;
     flex-direction: row;
@@ -49,6 +66,7 @@ body{
     align-items: center;
     background-color: transparent;
     min-width: 10rem;
+    width: 15em;
 }
 .second-navbar button{
     background-color: transparent;
@@ -62,6 +80,15 @@ body{
     
 }
 
+.banner{
+    width: 80%;
+    height: auto;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 /*MAIN BANNER*/
 .nav-banner .banner{
     width: 80%;
@@ -171,8 +198,13 @@ body{
     width: auto;
     height: auto;
 }
-
-
+.best-selling .title-section h3{
+    width: fit-content;
+}
+.best-selling .title-section{
+    display: flex;
+    justify-content: space-between;
+}
 /*footer*/
 
 .footer{

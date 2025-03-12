@@ -7,25 +7,26 @@
         <link rel="stylesheet" href="indexStyles.css">
     </head>
     <body>
+        <header class="header">
+            <div>
+                <h2>EXCLUSIVE</h2>
+            </div>
+            <div>
+                <nav class="main-navbar">
+                        <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
+                        <button class="nav-button">Contact</button>
+                        <button class="nav-button" onclick="window.location.href='ourStory.html'">About</button>
+                        <button class="nav-button" onclick="window.location.href='createAccount.html'">Sign Up</button>
+                    </nav>
+            </div>
+            <div  class="user-navbar">
+                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\search-icon.png" alt="search-icon"></button>
+                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\heart.png" alt="heart-icon"></button>
+                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\user-icon.jpg" alt="user-icon"></button>
+            </div>
+        </header>
         <div class="contenedor">
-            <header class="header">
-                <div>
-                    <h2>EXCLUSIVE</h2>
-                </div>
-                <div>
-                    <nav class="main-navbar">
-                            <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
-                            <button class="nav-button">Contact</button>
-                            <button class="nav-button" onclick="window.location.href='ourStory.html'">About</button>
-                            <button class="nav-button" onclick="window.location.href='createAccount.html'">Sign Up</button>
-                        </nav>
-                </div>
-                <div>
-                    <button class="nav-button icon-nav-button">O</button>
-                    <button class="nav-button icon-nav-button">W</button>
-                    <button class="nav-button icon-nav-button">C</button>
-                </div>
-            </header>
+            <header>Home</header>
             <section class="nav-banner">
                 <aside class="sidebar">
                     <nav class="second-navbar">
@@ -48,7 +49,7 @@
                 </aside>
             </section>
             <main class="main">
-                <div class="section-mark">
+                <div class="section-mark Today">
                     <div class="title-section">
                         <h3>Today's products</h3>
                     </div>
@@ -130,7 +131,7 @@
                         <button>View All</button>
                     </div>
                 </div>
-                <div class="section-mark">
+                <div class="section-mark Brows">
                     <div class="title-section">
                         <h3>Titulo</h3>
                     </div>
@@ -143,9 +144,61 @@
                         <button>View All</button>
                     </section>
                 </div>
-                <div class="section-mark">
+                <div class="section-mark best-selling">
                     <div class="title-section">
-                        <h3>Titulo</h3>
+                        <h3>Best selling products</h3>
+                            <button>View All</button>
+                    </div>
+                    <section class="wrapper-items explore">
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 class="discount">-35%</h4>
+                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            </div>
+                            <img src="assets/page_img/bolso_gucci.png" alt="Gucci duffle bag">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Gucci duffle bag</h3>
+                            <p class="price">$960 <span class="old-price">$1160</span></p>
+                            
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 ></h4>
+                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            </div>
+                            <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>RGB liquid CPU Cooler</h3>
+                            <p class="price">$1960</p>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 ></h4>
+                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            </div>
+                            <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>GP11 Shooter USB Gamepad</h3>
+                            <p class="price">$550</p>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            </div>
+                            <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Quilted Satin Jacket</h3>
+                            <p class="price">$750</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="banner">
+                    <img src="assets\page_img\banner-bocina.jpg" alt="Bocina">
+                </div>
+                <div class="section-mark explore" >
+                    <div class="title-section">
+                        <h3>Explore our products</h3>
                     </div>
                     <section class="wrapper-items">
                         <div class="product">
@@ -219,150 +272,12 @@
                             <h3>Quilted Satin Jacket</h3>
                             <p class="price">$750</p>
                         </div>
-                        
-                    </section>
-                    <div>
-                        <button>View All</button>
-                    </div>
-                </div>
-                <div class="section-mark" explore>
-                    <div class="title-section">
-                        <h3>Explore our products</h3>
-                    </div>
-                    <section class="wrapper-items">
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\xbox-rojo.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\camara.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\XBOXrojo.webp" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\pc2.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\jacketnegra.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\XBOXrojo.webp" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\pc2.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\jacketnegra.jpg" alt="Camera">
-                            </div>
-                        </div>
 
                     </section>
                     <div>
                         <button>View All</button>
                     </div>
                 </div>
-                <div class="section-mark">
-                    <div class="title-section">
-                        <h3>Best selling products</h3>
-                    </div>
-                    <section class="wrapper-items explore">
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\xbox-rojo.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\camara.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\XBOXrojo.webp" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\pc2.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\jacketnegra.jpg" alt="Camera">
-                            </div>
-                        </div>
-                    </section>
-                    <div>
-                        <button>View All</button>
-                    </div>
-                </div>
-                <div class="section-mark" explore>
-                    <div class="title-section">
-                        <h3>Explore our products</h3>
-                    </div>
-                    <section class="wrapper-items">
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\xbox-rojo.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\camara.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\XBOXrojo.webp" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\pc2.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\jacketnegra.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\XBOXrojo.webp" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\pc2.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img src="assets\page_img\jacketnegra.jpg" alt="Camera">
-                            </div>
-                        </div>
-                        
-                    </section>
-                    <div>
-                        <button>View All</button>
-                    </div>
-                </div>
-    
             </main>
         </div>
         <footer>
