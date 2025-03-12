@@ -7,6 +7,32 @@ body{
     margin: 0;
     font-family: 'Roboto', Inter, sans-serif;
 }
+.header {
+    display: flex; 
+    grid-area: header;
+    padding-top: 1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+/*MAIN NAVBAR*/
+.main-navbar{
+    display: flex;
+    background-color: transparent;
+    min-width: 12rem;
+    border: solid 2px transparent;
+    justify-content: center;
+}
+
+.main-navbar button{
+    background-color: transparent;
+    border: solid 1px transparent;    
+    margin: 1em 2em;
+}
+.main-navbar button:hover{
+    border-bottom: solid 1px #999;    
+}
+
 main{
     display: flex;
     justify-content: center;
