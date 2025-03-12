@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>e-commerce</title>
         <link rel="stylesheet" href="indexStyles.css">
+        <link rel="stylesheet" href="footer.css">
     </head>
     <body>
         <header class="header">
@@ -20,264 +21,509 @@
                     </nav>
             </div>
             <div  class="user-navbar">
-                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\search-icon.png" alt="search-icon"></button>
-                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\heart.png" alt="heart-icon"></button>
-                <button class="nav-button icon-nav-button"><img src="assets\page_img\icons\user-icon.jpg" alt="user-icon"></button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <button><img src="assets/icons/search.svg" alt="shearch-icon"></button>
+                </div>
+                <button class="nav-button icon-nav-button"><img src="assets/icons/Cart1 with buy.png" alt="car-icon"></button>
+                <button class="nav-button icon-nav-button"><img src="assets/icons/Wishlist.png" alt="heart-icon"></button>
+                <button class="nav-button icon-nav-button"><img src="assets/icons/user.png" alt="user-icon"></button>
             </div>
         </header>
         <div class="contenedor">
-            <header>Home</header>
             <section class="nav-banner">
                 <aside class="sidebar">
-                    <nav class="second-navbar">
-                        <!--                
+                    <nav class="second-navbar">             
                         <ul>
-                            <li><a href="#"></a>home</li>
-                            <li><a href="#"></a>contact</li>
-                            <li><a href="#"></a>about</li>
-                            <li><a href="#"></a>sign up</li>
+                            <li><a href="">Woman’s Fashion</a></li>
+                            <li><a href="">Men’s Fashion</a></li>
+                            <li><a href="">Electronics</a></li>
+                            <li><a href="">Home & Lifestyle</a></li>
+                            <li><a href="">Medicine</a></li>
+                            <li><a href="">Sports & Outdoor</a></li>
+                            <li><a href="">Baby’s & Toys</a></li>
+                            <li><a href="">Groceries & Pets</a></li>
+                            <li><a href="">Health & Beauty</a></li>
                         </ul>
-                        -->
-                        <button>home</button>
-                        <button>contact</button>
-                        <button>about</button>
-                        <button>signup</button>
                     </nav>
                 </aside>
                 <aside class="banner">
-                    <img src="assets\page_img\celular.jpg" alt="">
+                    <a href=""><img src="assets/page_img/anuncio-iphone.png" alt="anuncio-iphone"></a>
                 </aside>
+
             </section>
             <main class="main">
                 <div class="section-mark Today">
-                    <div class="title-section">
-                        <h3>Today's products</h3>
-                    </div>
+                    <h3 class="tittle">Today's products</h3>
+                    <h2>Flash Sales <span> Offer ends in 3 days</span></h2>
                     <section class="wrapper-items">
                         <div class="product">
                             <div class="product-header">
                                 <h4 class="discount">-35%</h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/bolso_gucci.png" alt="Gucci duffle bag">
+                            <img src="assets/page_img/havit_mando.png" alt="havit_mando">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Gucci duffle bag</h3>
+                            <h3>HAVIT HV-G92 Gamepad</h3>
+                            <p class="price">$120 <span class="old-price">$160</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <p>(88)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 class="discount">-40%</h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/rgb-keyboard.png" alt="rgb-keyboard">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>AK-900 Wired Keyboard</h3>
                             <p class="price">$960 <span class="old-price">$1160</span></p>
-                            
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(75)</p>
+                            </div>
                         </div>
                         <div class="product">
                             <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <h4 class="discount">-35%</h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/lcd_gamingmonitor.png" alt="lcd_gamingmonitor">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>IPS LCD Gaming Monitor</h3>
+                            <p class="price">$370 <span class="old-price">$400</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <p>(99)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 class="discount">-30%</h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/silla-gamer.png" alt="silla-gamer">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>S-Series Comfort Chair </h3>
+                            <p class="price">$375<span class="old-price">$400</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(99)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4 class="discount">-25%</h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
                             <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
                             <h3>RGB liquid CPU Cooler</h3>
-                            <p class="price">$1960</p>
+                            <p class="price">$1960<span class="old-price">$1470</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <p>(50)<p>
+                            </div>
                         </div>
                         <div class="product">
                             <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <h4 class="new">NEW</h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
                             <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
                             <h3>GP11 Shooter USB Gamepad</h3>
                             <p class="price">$550</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <p>(2)</p>
+                            </div>
                         </div>
                         <div class="product">
                             <div class="product-header">
                                 <h4></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
                             <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
                             <h3>Quilted Satin Jacket</h3>
                             <p class="price">$750</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(188)</p>
                             </div>
-                            <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>RGB liquid CPU Cooler</h3>
-                            <p class="price">$1960</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>GP11 Shooter USB Gamepad</h3>
-                            <p class="price">$550</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Quilted Satin Jacket</h3>
-                            <p class="price">$750</p>
                         </div>
                         
                     </section>
                     <div>
-                        <button>View All</button>
+                        <button class="view">View All Products</button>
                     </div>
                 </div>
-                <div class="section-mark Brows">
-                    <div class="title-section">
-                        <h3>Titulo</h3>
+                <div>
+                    <h3 class="tittle">Categories</h3>
+                    <h2>Browse By Category</h2>
+                    <div class="browse">
+                        <button class="Category"><img src="assets/icons/Category-Phone.png" alt="Category-Phone" class="phone"></button>
+                        <button class="Category"><img src="assets/icons/Category-computer.png" alt="Category-computer" class="computer"></button>
+                        <button class="Category"><img src="assets/icons/Category-smartwatch.png" alt="Category-smartwatch" class="smartwatch"></button>
+                        <button class="Category"><img src="assets/icons/Category-camera.png" alt="Category-camera" class="camera"></button>
+                        <button class="Category"><img src="assets/icons/Category-headphones.png" alt="Category-headphones" class="headphones"></button>
+                        <button class="Category"><img src="assets/icons/Category-gaming.png" alt="Category-gaming" class="gaming"></button>
+                        
                     </div>
-                    <section class="wrapper-items">
-                        <div class="product">33</div>
-                        <div class="product">44</div>
-                        <div class="product">55</div>
-                        <div class="product">66</div>
-                        <div class="product">77</div>
-                        <button>View All</button>
-                    </section>
                 </div>
                 <div class="section-mark best-selling">
+                    <h3 class="tittle">This Month</h3>
                     <div class="title-section">
-                        <h3>Best selling products</h3>
+                        <h2>Best selling products</h2>
                             <button>View All</button>
                     </div>
                     <section class="wrapper-items explore">
                         <div class="product">
                             <div class="product-header">
-                                <h4 class="discount">-35%</h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/bolso_gucci.png" alt="Gucci duffle bag">
+                            <img src="assets/page_img/buzo-rosa.png" alt="Quilted Satin Jacket">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Gucci duffle bag</h3>
-                            <p class="price">$960 <span class="old-price">$1160</span></p>
-                            
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            <h3>The north coat</h3>
+                            <p class="price">$260 <span>$360</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(188)</p>
                             </div>
-                            <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>RGB liquid CPU Cooler</h3>
-                            <p class="price">$1960</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>GP11 Shooter USB Gamepad</h3>
-                            <p class="price">$550</p>
                         </div>
                         <div class="product">
                             <div class="product-header">
                                 <h4></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
+                            <img src="assets/page_img/bolso_gucci.png" alt="Quilted Satin Jacket">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Quilted Satin Jacket</h3>
-                            <p class="price">$750</p>
+                            <h3>Gucci duffle bag</h3>
+                            <p class="price">$960 <span class="old-price">$1160</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(188)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/rgb_cooler.png" alt="Quilted Satin Jacket">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>RGB liquid CPU Cooler</h3>
+                            <p class="price">$160 <span class="old-price">$170</span></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(188)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/librero.png" alt="librero">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Small BookSelf</h3>
+                            <p class="price">$360</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(188)</p>
+                            </div>
                         </div>
                     </section>
                 </div>
                 <div class="banner">
-                    <img src="assets\page_img\banner-bocina.jpg" alt="Bocina">
+                    <a href="">><img src="assets/page_img/anuncio-parlante.png" alt="Bocina"></a>
                 </div>
-                <div class="section-mark explore" >
+                <div class="section-mark-explore" >
+                    <h3 class="tittle">Our Products</h3>
                     <div class="title-section">
-                        <h3>Explore our products</h3>
+                        <h2>Explore our products</h2>
                     </div>
                     <section class="wrapper-items">
                         <div class="product">
                             <div class="product-header">
-                                <h4 class="discount">-35%</h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/bolso_gucci.png" alt="Gucci duffle bag">
+                            <img src="assets/page_img/comida-de-perro.png" alt="dog-food">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Gucci duffle bag</h3>
-                            <p class="price">$960 <span class="old-price">$1160</span></p>
+                            <h3>Breed Dry Dog Food</h3>
+                            <p class="price">$100</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <p>(35)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/camara.png" alt="camara">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>CANON EOS DSLR Camera</h3>
+                            <p class="price">$360</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(95)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/asus_fhd.png" alt="asus_fhd">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>ASUS FHD Gaming Laptop</h3>
+                            <p class="price">$700</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <p>(325)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/curology-j7pKVQrTUsM-unsplash 1.png" alt="cremas">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Curology Product Set </h3>
+                            <p class="price">$500</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(145)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/carro-rojo.png" alt="carro-rojo">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Kids Electric Car</h3>
+                            <p class="price">$960</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <p>(65)</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-header">
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
+                            </div>
+                            <img src="assets/page_img/tacos-amarillos.png" alt="tacos-amarillos">
+                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
+                            <h3>Jr. Zoom Soccer Cleats</h3>
+                            <p class="price">$1160</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <p>(35)</p>
+                            </div>
                             
                         </div>
                         <div class="product">
                             <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <h4></h4>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>RGB liquid CPU Cooler</h3>
-                            <p class="price">$1960</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
+                            <img src="assets/page_img/gp11_mando.png" alt="gp11_mando">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
                             <h3>GP11 Shooter USB Gamepad</h3>
-                            <p class="price">$550</p>
+                            <p class="price">$660</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <p>(55)</p>
+                            </div>
+                            
                         </div>
                         <div class="product">
                             <div class="product-header">
                                 <h4></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                                <div class="icons-header">
+                                    <button><img src="assets/icons/view-icon.png" alt="view-icon"></button>
+                                    <button><img src="assets/icons/Fill Heart.png" alt="favorite"></button>
+                                </div>
                             </div>
-                            <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
+                            <img src="assets/page_img/satin_jacket.png" alt="satin_jacket">
                             <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
                             <h3>Quilted Satin Jacket</h3>
-                            <p class="price">$750</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
+                            <p class="price">$660</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <p>(55)</p>
                             </div>
-                            <img src="assets/page_img/rgb_cooler.png" alt="RGB liquid CPU Cooler">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>RGB liquid CPU Cooler</h3>
-                            <p class="price">$1960</p>
                         </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4 ></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/gp11_mando.png" alt="GP11 Shooter USB Gamepad">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>GP11 Shooter USB Gamepad</h3>
-                            <p class="price">$550</p>
-                        </div>
-                        <div class="product">
-                            <div class="product-header">
-                                <h4></h4>
-                                <button><img src="assets/icons/trash.png" alt="trash-icon"></button>
-                            </div>
-                            <img src="assets/page_img/satin_jacket.png" alt="Quilted Satin Jacket">
-                            <button class="add"><img src="assets/icons/Cart1.png" alt="car-icon">Add To Cart</button>
-                            <h3>Quilted Satin Jacket</h3>
-                            <p class="price">$750</p>
-                        </div>
-
                     </section>
                     <div>
-                        <button>View All</button>
+                        <button class="view">View All Products</button>
                     </div>
                 </div>
+                <h3 class="tittle">Featured</h3>
+                <h2>New Arrival</h2>
+                <div class="banner">
+                    <a href=""><img src="assets/page_img/anuncios.png" alt="Bocina"></a>
+                </div>
+                <section class="data">
+                    <div class="card-list">
+                        <div class="card">
+                            <img src="assets/icons/busdark-icon.png" alt="bus-icon" class="bus">
+                            <h2>FREE AND FAST DELIVERY</h2>
+                            <h3>Free delivery for all orders over $140</h3>
+                        </div>
+                        <div class="card">
+                            <img src="assets/icons/headphonesdark-icon.png" alt="headphones-icon" class="headphones">
+                            <h2>24/7 CUSTOMER SERVICE</h2>
+                            <h3>Friendly 24/7 customer support</h3>
+                        </div>
+                        <div class="card">
+                            <img src="assets/icons/securitydark-icon.png" alt="securitydark-icon" class="security">
+                            <h2>MONEY BACK GUARANTEE</h2>
+                            <h3>We reurn money within 30 days</h3>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
         <footer>
