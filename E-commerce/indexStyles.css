@@ -31,6 +31,20 @@ h2{
     padding-top: 20px;
 }
 /*MAIN NAVBAR*/
+.user-navbar{
+    display: flex;
+    gap: 0.5em
+}
+.user-navbar .search-bar{
+    width: fit-content;
+}
+.user-navbar .search-bar .search-input{
+    background-color: transparent;
+    border: none;
+}
+.user-navbar .search-bar .search-input:focus{
+    outline: none;
+}
 .main-navbar{
     display: flex;
     background-color: transparent;
@@ -38,7 +52,6 @@ h2{
     border: solid 2px transparent;
     justify-content: center;
 }
-
 .main-navbar .nav-button{
     background-color: transparent;
     border: solid 1px transparent;    
@@ -47,18 +60,20 @@ h2{
 .main-navbar .nav-button:hover{
     border-bottom: solid 1px #999;    
 }
-.main-navbar .user-navbar .icon-nav-button{
+.user-navbar .icon-nav-button{
     background: transparent;
     border: none;
     cursor: pointer;
     width: auto;
     height: auto;
 }
-.main-navbar .user-navbar .icon-nav-button img{
+.user-navbar .icon-nav-button img{
     width: 20px;
     height: auto;
     object-fit: contain;
+    border-radius: inherit;
 }
+/*Banner*/
 .nav-banner{
     display: flex;
     flex-direction: row;

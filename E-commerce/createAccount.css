@@ -12,13 +12,20 @@ main{
     justify-content: center;
     
 }
+/*NAVBAR*/
 .header {
+    box-sizing: border-box;
     display: flex; 
     grid-area: header;
     padding-top: 1em;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: 0 4em;
+    margin: 2em 0 2em 0;
+}
+h2{
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 /*MAIN NAVBAR*/
 .main-navbar{
@@ -28,26 +35,69 @@ main{
     border: solid 2px transparent;
     justify-content: center;
 }
-
-.main-navbar button{
+.main-navbar .nav-button{
     background-color: transparent;
     border: solid 1px transparent;    
     margin: 1em 2em;
 }
-.main-navbar button:hover{
+.main-navbar .nav-button:hover{
     border-bottom: solid 1px #999;    
+}
+.user-navbar{
+    display: flex;
+    gap: 0.5em
+}
+.user-navbar .search-bar{
+    width: fit-content;
+}
+.user-navbar .search-bar .search-input{
+    background-color: transparent;
+    border: none;
+}
+.user-navbar .search-bar .search-input:focus{
+    outline: none;
+}
+.user-navbar .icon-nav-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+.user-navbar .icon-nav-button img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+    border-radius: inherit;
+}
+/*MAIN*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+    height: 50%;
 }
 .formulario{
     box-sizing: border-box;
     width: 40%;
-    height: 500px;
-    padding: 0 5rem 0 5rem;
+    height: aunto;
+    padding: 0 6rem 0 6rem;
     text-align: center;
     border: solid 1px transparent;
     border-radius: 0.1rem;
+    align-self: center;
 }
 .formulario .text{
-    text-align: center;
+    text-align: left;
+}
+.formulario .text h2{
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
 }
 .formulario .formInput{
     padding: 2rem;
@@ -57,28 +107,144 @@ main{
     border: solid 1px transparent;
     background-color: transparent;
     border-bottom: solid 1px #ccc;
-    width: 90%;
-    margin-top: 1.5rem;
-    padding: 0.5rem;
-}
-.formulario #button-form{
+    width: 100%;
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 0.5rem 0;
+}
+.formulario .input-form:focus{
+    outline: none;
+}
+.formulario .button-log{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
     border: solid 1px transparent;
-    background-color: #f11;
+    background-color: #DB4444;
     color: #fff;
     border-radius: 0.2rem;
 }
-.formulario button:hover{
-    padding: 0.6rem;
+.formulario .button-google{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: solid 1px #555;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+    gap: 10px;
+}
+.formulario .button-google img{
+    width: 20px;
+    height: 20px;
+}
+.formulario .button-log:hover{
     border-bottom: solid 1px transparent;
-    box-shadow: 0 0 5px #000d;
+    box-shadow: 0 0 5px #666;
+}
+.formulario .button-forget{
+    margin-top: 0;
+    padding: 0 1em;
+    border: solid 1px transparent;
+    background-color: transparent;
+    color: #DB4444;
+}
+.formulario .button-forget:hover{
+    text-shadow: 0 1px 5px #DB4444;
+}
+.formulario .have-account{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.formulario .buttons-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 .imagen{
     width: 60%;
-    height: 500px;
+    height: 100%;
 }
 .imagen img{
     width: 100%;
     height: auto;
+    object-fit: contain;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .main-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formulario {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .imagen {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1em;
+    }
+
+    .main-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor {
+        padding: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .imagen {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        margin: 3rem 0;
+        padding: 10px;
+    }
+
+    .imagen {
+        max-width: 300px;
+    }
+
+    .formulario {
+        padding: 0 10px;
+    }
 }

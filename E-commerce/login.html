@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>LogIn</title>
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,31 +17,35 @@
         </div>
         <div>
             <nav class="main-navbar">
-                    <button class="nav-button" onclick="window.location.href='index.html'">home</button>
-                    <button class="nav-button">contact</button>
-                    <button class="nav-button" onclick="window.location.href='ourStory.html'">about</button>
-                    <button class="nav-button" onclick="window.location.href='createAccount.html'">signup</button>
-                </nav>
+                    <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
+                    <button class="nav-button">Contact</button>
+                    <button class="nav-button" onclick="window.location.href='ourStory.html'">About</button>
+                    <button class="nav-button" onclick="window.location.href='createAccount.html'">Sign Up</button>
+            </nav>
         </div>
-        <div>
-            <button class="nav-button icon-nav-button">O</button>
-            <button class="nav-button icon-nav-button">W</button>
-            <button class="nav-button icon-nav-button">C</button>
+        <div  class="user-navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Whar are you looking for?" class="search-input">
+                <button class="icon-nav-button"><img src="assets/icons/search.svg" alt="shearch-icon"></button>
+            </div>
         </div>
     </header>
-    <main>
+    <main class="contenedor">
         <div class="imagen">
-        <img src="assets\page_img\carrito.jpg" alt="control">
+            <img src="assets\page_img\celular-login.png" alt="control">
         </div>
         <form class="formulario">
             <div class="text">
-                <h2>Log In</h2>
+                <h2>Log in to Exclusive</h2>
+                <p>Enter you details below</p>
             </div>
             <div class="fromInput">
                 <input class="input-form" type="text" placeholder="Email or Phone Number">
                 <input class="input-form" type="password" placeholder="Password">
-                <button id="button-form" class="input-form">Create Account</button>
-                <a href="createAccount.html">Forgot Your Password? </a>
+            </div>
+            <div class="buttons-form">
+                <button class="button-log" onclick="window.location.href='index.html'">Log In</button>
+                <button class="button-forget">Forget Password?</button>
             </div>
         </form>
     </main>
