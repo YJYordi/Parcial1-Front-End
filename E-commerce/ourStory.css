@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 /* Estilos generales */
 
 * {
@@ -298,7 +296,7 @@ display: inline-block;
     flex-direction: column;
 }
 /*footer end*/
-=======
+
 * {
     margin: 0;
     padding: 0;
@@ -338,4 +336,4 @@ body {
 .main-navbar .nav-button:hover{
     border-bottom: solid 1px #999;    
 }
->>>>>>> 516b0ed440bb2bfdd0d74dd3964e38c90c2050b9
+
